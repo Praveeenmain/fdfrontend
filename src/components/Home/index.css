@@ -1,0 +1,138 @@
+/* Main container */
+.logodetection-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: #1e1e2e;
+    margin-left: 500px;
+    border-radius: 50px;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+}
+
+/* Card for content */
+.logodetection-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background: #282a36;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Title */
+.logodetection-header {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* Custom File Upload Button */
+.custom-file-upload {
+    display: block;
+    background: #3b82f6;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.custom-file-upload:hover {
+    background: #2563eb;
+}
+.custom-file-upload input {
+    display: none;
+}
+
+/* Image Preview */
+.logodetection-preview {
+    margin: 10px 0;
+}
+.logodetection-preview-image {
+    max-width: 100%;
+    border-radius: 8px;
+    border: 2px solid #3b82f6;
+}
+
+/* Upload Button */
+.logodetection-upload-button {
+    width: 100%;
+    padding: 12px;
+    background: #10b981;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.logodetection-upload-button:hover {
+    background: #059669;
+}
+.logodetection-upload-button:disabled {
+    background: #555;
+    cursor: not-allowed;
+}
+
+/* Result Box */
+.logodetection-result {
+    margin-top: 15px;
+    padding: 10px;
+    background: #333;
+    border-left: 5px solid #10b981;
+    border-radius: 8px;
+}
+.logodetection-result-header,
+.logodetection-result-confidence {
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logodetection-container {
+        height: auto;
+        padding: 20px;
+        margin-left: 100px ;
+        margin-top: 150px;
+    }
+    .logodetection-card {
+        padding: 20px;
+    }
+    .logodetection-header {
+        font-size: 20px;
+    }
+    .custom-file-upload {
+        padding: 8px 12px;
+    }
+    .logodetection-upload-button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logodetection-container {
+        width: 95%;
+        padding: 15px;
+        border-radius: 20px;
+        margin-left: 50px ;
+        margin-top: 150px;
+    }
+    .logodetection-card {
+        padding: 15px;
+        border-radius: 20px;
+    }
+    .logodetection-header {
+        font-size: 18px;
+    }
+    .custom-file-upload {
+        padding: 6px 10px;
+    }
+    .logodetection-upload-button {
+        padding: 8px;
+        font-size: 12px;
+    }
+}

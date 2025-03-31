@@ -1,0 +1,78 @@
+/* General Styling */
+.profile-container {
+    max-width: 500px;
+    margin-left:500px;
+    margin-top: 50px;
+    padding: 20px;
+    background: #282a36;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    color: aliceblue;
+}
+
+/* Heading */
+.profile-heading {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Profile Details */
+.profile-info {
+    text-align: left;
+    padding: 10px;
+}
+
+.profile-detail {
+    font-size: 16px;
+    margin: 8px 0;
+    color: #b2abab;
+}
+
+/* Loading and Error States */
+.loading {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .profile-container {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .profile-heading {
+        font-size: 20px;
+    }
+
+    .profile-detail {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-container {
+        max-width: 95%;
+        padding: 10px;
+        margin-left: 50px;
+        margin-top: 200px;
+    }
+
+    .profile-heading {
+        font-size: 18px;
+    }
+
+    .profile-detail {
+        font-size: 12px;
+    }
+}
