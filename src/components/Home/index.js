@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Cookies from "js-cookie";
-import { Circles } from "react-loader-spinner";
+
 import "./index.css";
 
 const LogoDetector = () => {
@@ -54,7 +54,7 @@ const LogoDetector = () => {
                     </div>
                 )}
                 <button onClick={handleUpload} disabled={loading} className="logodetection-upload-button">
-                    {loading ? <Circles height="20" width="20" color="#fff" /> : "Upload & Detect"}
+                    {loading ?  "Analyzing": "Upload & Detect"}
                 </button>
                 {prediction && (
                     <div className="logodetection-result">
